@@ -1,4 +1,4 @@
-# Arduinio-Text-To-Speech-TTS
+# Arduinio Text To Speech (TTS)
 
 Speech to text synthesis using SAPI with C#. String to be synthesized is transmitted over serial link from arduino.
 
