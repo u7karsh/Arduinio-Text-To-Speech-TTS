@@ -25,13 +25,12 @@ void sendText( String text ){
   for( int i=0; i<data_length; i++){
     checksum = checksum ^ ( (int)text[i] );
   }
-  
-  (header + (char)data_length + text + checksum).toCharArray(out, 4 + data_length);
-  Serial.println( out );
+
+  Serial.println( header + char(data_length) + text + char(checksum) );
   
 }
 
 void loop(){
-  sendText("Hello World!");
+  sendText("Hello World");
   delay(10000);
 }
